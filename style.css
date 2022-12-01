@@ -1,0 +1,284 @@
+*
+{
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing : border-box ;
+}
+html , body{
+    /* line-height : 4 ;  */
+    font-weight : 300 ;
+}
+.navigation
+{
+    display: flex ;
+    justify-content : space-between;
+    align-items : center ;
+    /* max-width : 1200px ;
+    margin : 0 auto ; */
+    
+    
+}
+button{
+    padding: 10px 15px ;
+    border : none ;
+    transition : 0.2s ease-in-out ;
+    /* background-color: red; */
+   
+}
+button:hover{
+    opacity : 0.8s ;
+    transition : 0.2s ease-in-out ;
+    /* box-shadow: 0 5px #666;; */
+    /* background-color:  blue ; */
+   
+}
+.container
+{
+    max-width : 1200px ;
+    margin : 0 auto ;
+    /* max-width: 400px; */
+    /* background-color: red; */
+}
+nav
+{
+    box-shadow: 4px 4px 5px rgba(1,1,1,1);
+    position : sticky ;
+    top : 0 ;
+    margin-bottom : 32px ;
+    background : red ;
+    padding : 10px ;
+    z-index : 100 ;
+}
+
+.bar_icon img
+{
+    min-width: 40px;
+    /* min-height : 50px; */
+}
+/* .hero */
+/* { */
+    /* display : flex ; */
+    /* justify-content: flex-end; */
+/* }
+.content */
+/* { */
+    /* margin-left : 200px; */
+    /* margin-top : auto 200px auto 0  ; */
+    /* margin-top : 80px;
+} */
+.hero
+{
+    display : flex ;
+    gap : 100px ; 
+    justify-content: flex-end;
+    /* gap : 100px; */
+    /* justify-content: center; */
+    align-items : center ;
+}
+.hero_content
+{
+    display  :flex ; 
+    flex-direction : column;
+    /* background-color: aqua; */
+    gap  : 20px ; 
+}
+.tag
+{
+    background-color: #149f39 ;
+    /* padding : 5px 10px ;  */
+    color : white ;
+    align-self: flex-start;
+    max-height: fit-content;
+    padding : 5px 10px ;
+    /* max-width: fit-content; */
+
+}
+.hero_content h1{
+    font-size : 72px ;
+    line-height : 1.2 ;
+    font-weight : 400 ;
+    /* line-height : 3.2px; */
+}
+.explore_btn
+{
+    background-color : #ffc066 ;
+    /* width: fit-content; */
+    align-self :flex-start
+}
+.features
+{
+    margin-top : 100px ;
+    display : flex ;
+    gap : 20px ; 
+    justify-content: center;
+    margin-bottom : 50px 
+}
+
+.feature{
+    display : flex ;
+    gap : 20px ; 
+    padding: 20px ; 
+    }
+
+.feature img{
+    width : 72px ; 
+}
+
+.feature:hover
+{
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.5);
+    transition : 0.3s ease-in-out;
+}
+.divider
+{
+    
+    
+    border : 1px solid   grey ;
+    /* border-top : thin; */
+    /* border-top : 5px ;  */
+    /*  */
+    margin : 20px 0 ;
+}
+.menu
+{
+    display : flex ;
+    flex-direction: column ;
+    /* justify-content: center; */
+    align-items : center ; 
+    gap : 50px ;
+    margin : 50px 0 ;
+}
+
+.menu .tag{
+    /* background-color: green ; */
+    color : white ;
+    align-self :center ;
+    /* padding : 10px 10px ; */
+}
+.grid
+{
+    padding : 10px 10px ;
+    background-color: pink;
+    display : grid ; 
+    gap : 10px ;
+    grid-template-areas :
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7"
+    "I4 I5 I6 I7"
+    /* "I1 I1 I2"
+    "I1 I1 I2"
+    "I4 I5 I6"
+    "I4 I5 I6" */
+
+}
+
+.item1
+{
+    grid-area : I1 ; 
+}
+.item2
+{
+    grid-area : I2 ; 
+}
+.item3
+{
+    grid-area : I3 ; 
+}
+.item4
+{
+    grid-area : I4 ; 
+}
+.item5
+{
+    grid-area : I5 ; 
+}
+.item6
+{
+    grid-area : I6 ; 
+}
+.item7
+{
+    grid-area : I7 ; 
+}
+.grid_image
+{
+    border-radius : 10px ;
+    width : 100% ; 
+    height : 100%;
+}
+.grid_image:hover
+{
+    transform : scale( 1.05);
+    transition : 0.3s ease-in-out ;
+}
+/* .menu h2 
+{
+    margin : 30px auto ;
+} */
+footer{
+    background-color : #fff0db;
+}
+.footer_container
+{
+    padding : 30px ; 
+    display : flex ; 
+    justify-content : space-between;
+}
+.link_list h3{
+    margin-bottom : 10px ; 
+    color : gray ;
+}
+.link_list ul{
+    list-style : none ; 
+}
+.link_list ul li {
+    font-size : 16px ; 
+    margin-bottom : 5px ; 
+}
+.news_letter h3{
+    margin-bottom : 10px ; 
+    color : gray ;
+}
+.news_letter input {
+    padding : 5px 40px ;
+    margin-bottom : 10px ;
+}
+.icon_container
+{
+    display : flex ;
+    gap : 10px ;
+    font-size : 32px ; 
+}
+@media( max-width : 786px)
+{
+    .hero{
+        flex-direction :column ;
+    }
+    /* for having the image at the center */
+    .hero_img{
+        display :flex ; 
+        justify-content: center ;
+    }
+    .hero_img img
+    {
+        /* here width is in percentage for changing size of image according 
+        to the */
+        width : 80%;
+        margin : 0 auto ;
+    }
+    .hero_content{
+        gap: 10px ;
+        padding :10px ;
+    }
+    .hero_content h1{
+        font-size : 32px ;
+    }
+    .features{
+        flex-direction : column ;
+    }
+    .footer_container{
+        flex-direction : column ;
+    }
+
+}
